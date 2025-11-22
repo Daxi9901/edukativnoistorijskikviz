@@ -7,56 +7,114 @@
 
 <!-- GLOBAL ADSENSE SCRIPT -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7023862171822526"
-     crossorigin="anonymous"></script>
+crossorigin="anonymous"></script>
 
 <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
     body {
         background:#0b1020;
         color:#e7e9f5;
         font-family: system-ui;
-        margin:0;
-        padding:0;
+        display: flex;
+        flex-direction: column;
     }
+
+    /* Gura footer na dno */
+    .content-wrap {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        padding:14px 0;
+        text-align:center;
+        background:#0f152b;
+        border-bottom:1px solid rgba(255,255,255,0.1);
+        white-space:nowrap;
+    }
+    nav a {
+        color:#e7e9f5;
+        margin:0 12px;
+        text-decoration:none;
+    }
+
     .container {
         max-width:900px;
         margin:0 auto;
-        padding:20px;
+        padding:25px 20px 40px;
     }
-    h1 { margin-top:0; }
+
     p { line-height:1.6; }
+
+    /* FOOTER */
+    footer {
+        background:#0f152b;
+        color:#7e9eff;
+        text-align:center;
+        padding:14px 0;
+        border-top:1px solid rgba(255,255,255,0.15);
+        white-space:nowrap;
+    }
+    footer a {
+        color:#7e9eff;
+        margin:0 10px;
+        text-decoration:none;
+    }
 </style>
+
 </head>
 <body>
 
-<nav style="width:100%;padding:14px 0;text-align:center;background:#0f152b;border-bottom:1px solid rgba(255,255,255,0.1);">
-    <a href="index.html" style="color:#e7e9f5; margin:0 12px; text-decoration:none;">Home</a>
-    <a href="about.html" style="color:#e7e9f5; margin:0 12px; text-decoration:none;">About</a>
-    <a href="contact.html" style="color:#e7e9f5; margin:0 12px; text-decoration:none;">Contact</a>
-    <a href="coffee.html" style="color:#e7e9f5; margin:0 12px; text-decoration:none;">Buy me a coffee</a>
-    <a href="privacy.html" style="color:#e7e9f5; margin:0 12px; text-decoration:none;">Privacy</a>
+<div class="content-wrap">
+
+    
+
+    <div class="container">
+        <h1>O projektu</h1>
+        <p>Ovaj istorijski kviz napravljen je kao edukativna platforma koja objedinjuje različite periode istorije, civilizacije, ratove, bitke i ličnosti.</p>
+        <p>Cilj projekta je da pruži jasne, zanimljive i pouzdane informacije, a zatim omogući igračima da testiraju svoje znanje kroz interaktivna pitanja.</p>
+        <p>Sve epohe se učitavaju iz JSON fajlova, što omogućava da se kviz lako proširuje novim temama.</p>
+        <p>Projekat pomaže učenicima, studentima i svim ljubiteljima istorije.</p>
+
+        <!-- GOOGLE BANNER (IZNAD FOOTERA) -->
+        <div style="margin-top:30px; text-align:center;">
+            <ins class="adsbygoogle"
+                style="display:block;"
+                data-ad-client="ca-pub-7023862171822526"
+                data-ad-slot="1234567890"
+                data-ad-format="auto"
+                data-full-width-responsive="true">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER NAVIGACIJA -->
+<nav style="
+    width:100%;
+    padding:8px 0;
+    text-align:center;
+    background:#0f152b;
+    border-top:1px solid rgba(255,255,255,0.15);
+    font-size:13px;
+    white-space: nowrap;
+">
+    <a href="index.html" style="color:#7e9eff; margin:0 8px; text-decoration:none;">Home</a>
+    <a href="about.html" style="color:#7e9eff; margin:0 8px; text-decoration:none;">About</a>
+    <a href="contact.html" style="color:#7e9eff; margin:0 8px; text-decoration:none;">Contact</a>
+    <a href="coffee.html" style="color:#7e9eff; margin:0 8px; text-decoration:none;">Buy me a coffee</a>
+    <a href="privacy.html" style="color:#7e9eff; margin:0 8px; text-decoration:none;">Privacy</a>
 </nav>
-
-<div class="container">
-    <h1>O projektu</h1>
-    <p>Ovaj istorijski kviz napravljen je kao edukativna platforma koja objedinjuje različite periode istorije, civilizacije, ratove, bitke i ličnosti.</p>
-    <p>Cilj projekta je da pruži jasne, zanimljive i pouzdane informacije, a zatim omogući igračima da testiraju svoje znanje kroz interaktivna pitanja.</p>
-    <p>Sve epohe se učitavaju iz JSON fajlova, što omogućava da se kviz lako proširuje novim temama, sadržajima i pitanjima.</p>
-    <p>Projekat pomaže učenicima, studentima, ljubiteljima istorije i svima koji žele da na zabavan način prošire svoje znanje.</p>
-</div>
-
-<!-- GOOGLE FOOTER BANER -->
-<div style="margin-top:40px; text-align:center;">
-    <ins class="adsbygoogle"
-        style="display:block; text-align:center;"
-        data-ad-client="ca-pub-7023862171822526"
-        data-ad-slot="1234567890"
-        data-ad-format="auto"
-        data-full-width-responsive="true">
-    </ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
 
 </body>
 </html>
